@@ -1,31 +1,39 @@
-# Azure Data Projects Portfolio
+# IMDB Movie Data Pipeline – Azure Data Factory
 
-Welcome to my repository showcasing multiple data engineering and analytics projects. This portfolio highlights my expertise in Azure Data Factory, Databricks, and Power BI to deliver impactful data solutions and business insights.
+This project showcases a high-end, production-grade **ETL pipeline** built with **Azure Data Factory (ADF)** to ingest, transform, and curate ~1GB of IMDB movie data for advanced analytics.
 
-## Folder Structure
+## 🔧 Key Features
 
-- **ADF-IMDBADE-Project**: Azure Data Factory pipelines and related scripts for ETL processing and data orchestration.
-- **DataBricks-Notebooks**: Databricks notebooks used for scalable data processing, transformation, and analytics.
-- **PowerBI-Projects**: Various Power BI dashboards and reports showcasing interactive data visualizations and business intelligence solutions.
+- **CDC (Change Data Capture)** implementation to track and process only new or modified data.
+- **SCD Type-2** handling for tracking historical changes in movie and cast metadata.
+- **Multi-layered ETL design**: Raw → Filtered → Foundation → Enriched → Curated
+- **Trigger monitoring and failure logging** with automated logs stored in **Azure SQL Warehouse**
+- End-to-end **metadata-driven architecture**
+- Dynamic pipeline parameterization and robust error handling
+- Git-integrated ADF development for version control
 
-## How to Use
+## 📂 Folder Structure
 
-Each folder contains standalone projects with their own files and documentation (README) where applicable. Feel free to explore the projects for detailed information and insights.
+- `/pipelines`: ADF pipeline JSONs (CDC, SCD, Main ETL)
+- `/datasets`: Source and sink dataset definitions
+- `/linkedServices`: Azure services connection configs
+- `/logs`: Sample logs and monitoring queries
+- `/diagrams`: Architecture and pipeline flow diagrams
 
----
+## 🧱 Tech Stack
 
-## About Me
+- Azure Data Factory
+- Azure Blob Storage
+- Azure SQL Data Warehouse (Synapse)
+- Git Integration
+- Azure Monitor (optional)
 
-I am Pradeep Kumar, a passionate Data Analyst and BI Developer with hands-on experience in Azure cloud services, data engineering, and business intelligence. Skilled in transforming complex datasets into actionable insights through Power BI, SQL, and Azure Data Factory pipelines. 
+## 📊 Objective
 
-I am committed to delivering clean, scalable, and efficient data solutions to support data-driven decision-making.
+To build a robust data pipeline capable of processing IMDB movie metadata with **historical tracking**, **audit logs**, and **CDC mechanisms** for scalable enterprise analytics.
 
----
+## 👤 Author
 
-## Contact
-
-- LinkedIn: [https://www.linkedin.com/in/yenni-pradeep-kumar/](https://www.linkedin.com/in/yenni-pradeep-kumar/)  
-- Email: Pradeepyenni.Global@gmail.com  
-
-Feel free to connect with me for collaboration or inquiries.
-
+**Pradeep Kumar**  
+📧 Email: Pradeepyenni.Global@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/yenni-pradeep-kumar/)
